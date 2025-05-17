@@ -1,3 +1,41 @@
+error:
+tasya@WINDOWS-D1B0MV3:~/icp_bootcamp$ dfx deploy
+Deploying all canisters.
+Created a wallet canister on the "local" network for user "default" with ID "uqqxf-5h777-77774-qaaaa-cai"
+icp_bootcamp_backend canister created with canister id: uxrrr-q7777-77774-qaaaq-cai
+icp_bootcamp_frontend canister created with canister id: u6s2n-gx777-77774-qaaba-cai
+Building canister 'icp_bootcamp_backend'.
+Building canister 'icp_bootcamp_frontend'.
+Error: Failed while trying to deploy canisters.
+Caused by: Failed to build all canisters.
+Caused by: Failed while trying to build all canisters.
+Caused by: The post-build step failed for canister 'u6s2n-gx777-77774-qaaba-cai' (icp_bootcamp_frontend)
+Caused by: Failed to build frontend for network 'local'.
+Caused by: The command 'cd "/home/tasya/icp_bootcamp" && CANISTER_CANDID_PATH="/home/tasya/icp_bootcamp/.dfx/local/canisters/icp_bootcamp_frontend/assetstorage.did" CANISTER_CANDID_PATH_ICP_BOOTCAMP_BACKEND="/home/tasya/icp_bootcamp/.dfx/local/canisters/icp_bootcamp_backend/icp_bootcamp_backend.did" CANISTER_ID="u6s2n-gx777-77774-qaaba-cai" CANISTER_ID_ICP_BOOTCAMP_BACKEND="uxrrr-q7777-77774-qaaaq-cai" CANISTER_ID_ICP_BOOTCAMP_FRONTEND="u6s2n-gx777-77774-qaaba-cai" DFX_NETWORK="local" DFX_VERSION="0.26.1" "npm" "run" "build" "--workspace" "icp_bootcamp_frontend"' failed with exit status 'exit status: 1'.
+Stdout:
+
+> icp_bootcamp_frontend@0.0.0 prebuild
+> dfx generate
+
+
+Stderr:
+<3>WSL (10 - Relay) ERROR: CreateProcessParseCommon:863: Failed to translate \\wsl.localhost\Ubuntu\home\tasya\icp_bootcamp\src\icp_bootcamp_frontend
+<3>WSL (10 - Relay) ERROR: UtilTranslatePathList:2878: Failed to translate \\wsl.localhost\Ubuntu\home\tasya\icp_bootcamp\src\icp_bootcamp_frontend\node_modules\.bin
+<3>WSL (10 - Relay) ERROR: UtilTranslatePathList:2878: Failed to translate \\wsl.localhost\Ubuntu\home\tasya\icp_bootcamp\src\node_modules\.bin
+<3>WSL (10 - Relay) ERROR: UtilTranslatePathList:2878: Failed to translate \\wsl.localhost\Ubuntu\home\tasya\icp_bootcamp\node_modules\.bin
+<3>WSL (10 - Relay) ERROR: UtilTranslatePathList:2878: Failed to translate \\wsl.localhost\Ubuntu\home\tasya\node_modules\.bin
+<3>WSL (10 - Relay) ERROR: UtilTranslatePathList:2878: Failed to translate \\wsl.localhost\Ubuntu\home\node_modules\.bin
+<3>WSL (10 - Relay) ERROR: UtilTranslatePathList:2878: Failed to translate \\wsl.localhost\Ubuntu\node_modules\.bin
+<3>WSL (10 - Relay) ERROR: CreateProcessCommon:640: execvpe(/bin/bash) failed: No such file or directory
+npm error Lifecycle script `build` failed with error:
+npm error code 1
+npm error path \\wsl.localhost\Ubuntu\home\tasya\icp_bootcamp\src\icp_bootcamp_frontend
+npm error workspace icp_bootcamp_frontend@0.0.0
+npm error location \\wsl.localhost\Ubuntu\home\tasya\icp_bootcamp\src\icp_bootcamp_frontend
+npm error command failed
+npm error command bash -c dfx generate
+
+
 # `icp_bootcamp`
 
 Welcome to your new `icp_bootcamp` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
