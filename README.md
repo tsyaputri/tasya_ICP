@@ -1,19 +1,3 @@
-error:
-tasya@WINDOWS-D1B0MV3:~/icp_bootcamp$ dfx deploy
-Deploying all canisters.
-Created a wallet canister on the "local" network for user "default" with ID "uqqxf-5h777-77774-qaaaa-cai"
-icp_bootcamp_backend canister created with canister id: uxrrr-q7777-77774-qaaaq-cai
-icp_bootcamp_frontend canister created with canister id: u6s2n-gx777-77774-qaaba-cai
-Building canister 'icp_bootcamp_backend'.
-Building canister 'icp_bootcamp_frontend'.
-Error: Failed while trying to deploy canisters.
-Caused by: Failed to build all canisters.
-Caused by: Failed while trying to build all canisters.
-Caused by: The post-build step failed for canister 'u6s2n-gx777-77774-qaaba-cai' (icp_bootcamp_frontend)
-Caused by: Failed to build frontend for network 'local'.
-Caused by: The command 'cd "/home/tasya/icp_bootcamp" && CANISTER_CANDID_PATH="/home/tasya/icp_bootcamp/.dfx/local/canisters/icp_bootcamp_frontend/assetstorage.did" CANISTER_CANDID_PATH_ICP_BOOTCAMP_BACKEND="/home/tasya/icp_bootcamp/.dfx/local/canisters/icp_bootcamp_backend/icp_bootcamp_backend.did" CANISTER_ID="u6s2n-gx777-77774-qaaba-cai" CANISTER_ID_ICP_BOOTCAMP_BACKEND="uxrrr-q7777-77774-qaaaq-cai" CANISTER_ID_ICP_BOOTCAMP_FRONTEND="u6s2n-gx777-77774-qaaba-cai" DFX_NETWORK="local" DFX_VERSION="0.26.1" "npm" "run" "build" "--workspace" "icp_bootcamp_frontend"' failed with exit status 'exit status: 1'.
-Stdout:
-
 > icp_bootcamp_frontend@0.0.0 prebuild
 > dfx generate
 
